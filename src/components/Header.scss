@@ -1,0 +1,46 @@
+@import "../sass/abstracts/variables";
+.header {
+  position: relative;
+  overflow: auto;
+  height: 10vh;
+  background: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  clip-path: polygon(0 0, 80% 0, 85% 100%, 0 100%);
+}
+.logo {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &-img {
+    width: 6rem;
+  }
+}
+.navbar {
+  position: absolute;
+  display: inline-block;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &-links {
+    overflow: auto;
+
+    li {
+      float: left;
+      list-style: none;
+      font-size: 2rem;
+
+      &:not(:last-child) {
+        padding-right: 2rem;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
