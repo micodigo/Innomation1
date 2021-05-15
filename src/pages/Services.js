@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/Header";
 
 export default function Services() {
-    return (
-        <div>
-        <h1>Services</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <h1>Services</h1>
+    </div>
+  );
 }
