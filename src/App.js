@@ -1,5 +1,10 @@
 import React from "react";
+import Contact from "./pages/Contact.js"
 
 export default function App() {
-  return <div>Mayank</div>;
+  return(
+    <div>
+      <Contact />
+    </div>
+  );
 }
