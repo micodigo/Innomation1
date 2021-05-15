@@ -22,12 +22,12 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="Services" className="link">
+            <Link to="/Services" className="link">
               Services
             </Link>
           </li>
           <li>
-            <Link to="ContactUs" className="link">
+            <Link to="/ContactUs" className="link">
               Contact Us
             </Link>
           </li>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.scss';
 import { useFormik } from "formik";
+import Header from '../components/Header';
 
 export default function Contact() {
     const formik=useFormik({
@@ -11,6 +12,7 @@ export default function Contact() {
     });
     return(
         <div>
+            <Header />
             <div><h1>Write A Message</h1></div>
             <form onSubmit={formik.handleSubmit}>
                 <label htmlFor='name'>Your Name </label>
