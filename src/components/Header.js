@@ -23,13 +23,13 @@ export default function Header() {
           <img src={logo} alt="" className="logo-img" />
         </div>
         <i className="header-sub-phone">
-          <img src={picon} alt="" className="p-icon" /> +919876346722
+          <img src={picon} alt="" className="p-icon" /> +91-9958075432
         </i>
         <Link to="/ContactUs" className="header-sub-contact">
           Contact Us
         </Link>
       </div>
-      <hr className="header-partition" />
+
       <div
         className={navbar ? "header-main header-main-scroll" : "header-main"}
       >
@@ -62,18 +62,43 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+
+        {/* Social Links */}
         <div className="social">
-          <a href="">
+          <a
+            href="https://www.facebook.com/"
+            target="blank"
+            className="social-link"
+          >
             <i className="ti-facebook social-icon"></i>
           </a>
-          <a href="">
+
+          <a href="https://twitter.com/" target="blank" className="social-link">
             <i className="ti-twitter social-icon"></i>
           </a>
-          <a href="">
+
+          <a
+            href="https://www.instagram.com/"
+            target="blank"
+            className="social-link"
+          >
             <i className="ti-instagram social-icon"></i>
           </a>
-          <a href="">
+
+          <a
+            href="https://www.skype.com"
+            target="blank"
+            className="social-link"
+          >
             <i className="ti-skype social-icon"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/"
+            target="blank"
+            className="social-link"
+          >
+            <i className="ti-linkedin social-icon"></i>
           </a>
         </div>
       </div>
