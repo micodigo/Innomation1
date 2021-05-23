@@ -2,12 +2,12 @@
 @import "../sass/abstracts/mixins";
 @import "../sass/base/animations";
 .header {
-  &-sub {
+  &_sub {
     height: 14vh;
     background-color: $color-primary-light;
     position: relative;
     border-bottom: 0.7px solid $color-border;
-    &-phone {
+    &_phone {
       font-size: 2rem;
       color: $color-primary-dark;
       position: absolute;
@@ -16,7 +16,7 @@
       right: 18%;
       transform: translateY(-50%);
     }
-    &-contact {
+    &_contact {
       text-decoration: none;
       font-size: 2rem;
       color: $color-primary-dark;
@@ -29,19 +29,20 @@
       padding: 1rem 2rem;
       transition: all 0.3s;
       &:hover {
-        background-color: $color-secondary;
+        background-color: darken($color-primary-dark, 20%);
         color: #fff;
       }
     }
   }
-  &-main {
+  &_main {
     position: -webkit-sticky;
     position: sticky;
     top: -5rem;
     background-color: $color-primary-light;
     height: 9vh;
-    &-scroll {
+    &_scroll {
       top: 0;
+      background-color: white;
       animation: navfadein 0.7s ease-in-out;
       z-index: 50;
     }
@@ -54,11 +55,11 @@
   top: 50%;
   transform: translateY(-50%);
   left: 6%;
-  &-img {
+  &_img {
     width: 22rem;
   }
 }
-.p-icon {
+.p_icon {
   width: 10%;
 }
 
@@ -68,7 +69,7 @@
   top: 50%;
   transform: translateY(-50%);
 
-  &-links {
+  &_links {
     @include clearfix;
     list-style: none;
     li {
@@ -80,7 +81,7 @@
         padding-right: 3rem;
       }
     }
-    &-link {
+    &_link {
       transition: all 0.2s;
       &:visited,
       &:link {
@@ -88,20 +89,20 @@
         color: $color-primary-dark;
         position: relative;
       }
-      &:before {
+      &::before {
         content: "";
         position: absolute;
         width: 100%;
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: $color-secondary;
+        background-color: darken($color-primary-dark, 20%);
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.3s ease-in-out;
       }
       &:hover {
-        color: $color-secondary;
+        color: darken($color-primary-dark, 20%);
         &:before {
           visibility: visible;
           transform: scaleX(1);
@@ -117,7 +118,7 @@
   transform: translateY(-50%);
   right: 13%;
 
-  &-link {
+  &_link {
     color: $color-primary-dark;
     font-size: 1.5rem;
     cursor: pointer;

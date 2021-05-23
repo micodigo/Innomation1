@@ -1,74 +1,51 @@
 @import "../../sass/abstracts/mixins";
 @import "../../sass/abstracts/variables";
+@import "../../sass/base/layout";
 
-.whyussection {
-  padding: 4rem 0;
-  background-color: rgba($color-primary-light, 0.4);
-  font-size: 2rem;
-  // &:hover .servicecard:not(:hover) {
-  //   transform: scale(0.9);
-  // }
-}
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
-  &:not(:last-child) {
-    margin-bottom: $gutter-vertiical;
-  }
-
-  @include clearfix;
-
-  [class^="col-"] {
-    text-align: center;
-    float: left;
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    }
-  }
-  .col-1-of-3 {
-    width: calc((100% - 2 *#{$gutter-horizontal}) / 3);
-  }
-}
 .servicecard {
   position: relative;
   height: 30rem;
-  background-color: rgba(#fff, 0.8);
+  color: darken($color-primary-dark, 20%);
+
+  background-color: white;
   font-size: 1.5rem;
-  //   padding: 2.5rem;
+
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
-  transition: transform 0.3s;
-
-  &-active {
+  transition: all 0.3s;
+  -webkit-filter: blur(0);
+  cursor: pointer;
+  &_content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &_active {
     transform: scale(1.2);
     z-index: 20;
+    border-radius: 3px 3px;
+    transition: all 0.3s;
+    @include servicecardtogle(0deg);
+    @include icontoggle(0%);
   }
-  &-inactive {
+  &_inactive {
+    border-radius: 2rem 3px;
     &:hover {
       transform: scale(1.1);
       z-index: 19;
+      border-radius: 3px 3px;
     }
+    @include icontoggle(60%);
+    @include servicecardtogle(-90deg);
   }
-  // &__icon {
-  //     font-size: 6rem;
-  //     margin-bottom: .5rem;
-  //     display: inline-block;
-  //     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-  //     -webkit-background-clip: text;
-  //     color: transparent;
-  // }
 }
 .heading {
-  display: inline-block;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  color: darken($color-primary-dark, 20%);
 }
 
-.toggle-info {
+.toggle_info {
   position: absolute;
   display: inline-block;
   height: 3rem;
@@ -89,7 +66,7 @@
     box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
     transform: translateY(-2px);
   }
-  &-close {
+  &_close {
     background-color: #0096a0;
     .left {
       top: 1.6rem;
@@ -102,7 +79,7 @@
       transform: rotate(-45deg);
     }
   }
-  &-open {
+  &_open {
     background-color: darkorange;
     .left {
       top: 1.4rem;
@@ -115,4 +92,8 @@
       transform: rotate(-45deg);
     }
   }
+}
+.action {
+  text-align: center;
+  margin: 1rem 0;
 }

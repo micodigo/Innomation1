@@ -1,0 +1,15 @@
+@import "../../sass/abstracts/mixins";
+@import "../../sass/abstracts/variables";
+@import "../../sass/base/layout";
+
+.icon {
+  img {
+    width: 50%;
+  }
+}
+
+.heading {
+  text-transform: uppercase;
+  // display: inline-block;
+  // text-align: center;
+}
