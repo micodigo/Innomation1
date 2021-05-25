@@ -72,11 +72,11 @@
   &_links {
     @include clearfix;
     list-style: none;
+    // -webkit-background-clip: text;
     li {
       float: left;
       font-size: 1.8rem;
       font-weight: 600;
-
       &:not(:last-child) {
         padding-right: 3rem;
       }

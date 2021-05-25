@@ -1,8 +1,0 @@
-@import "../../sass/abstracts/mixins";
-@import "../../sass/abstracts/variables";
-
-.hero {
-  height: 74vh;
-  background-image: linear-gradient($color-primary-light, $color-primary-dark),
-    url(../../img/hero.jpg);
-}

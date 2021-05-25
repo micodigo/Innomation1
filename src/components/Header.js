@@ -8,6 +8,7 @@ import "../themify-icons.css";
 
 export default function Header() {
   const [navbar, setnavbar] = useState(false);
+
   const headerHandler = () => {
     if (window.scrollY >= 150) {
       setnavbar(true);

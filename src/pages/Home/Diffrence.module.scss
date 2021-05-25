@@ -1,15 +1,63 @@
 @import "../../sass/abstracts/mixins";
 @import "../../sass/abstracts/variables";
 @import "../../sass/base/layout";
+@import "../../sass/base/typography";
+
+.col_1_of_4 {
+  background-color: white;
+  height: 54rem;
+
+  padding: 5rem 2rem 0 2rem;
+  border-top-left-radius: 85%;
+  transition: all 0.3s;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+}
 
 .icon {
   img {
-    width: 50%;
+    width: 100%;
   }
 }
 
-.heading {
-  text-transform: uppercase;
-  // display: inline-block;
-  // text-align: center;
+.description {
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  &_text {
+    text-align: center;
+    color: darken($color-primary-dark, 20%);
+    margin-bottom: 1.5rem;
+  }
+}
+.otd {
+  h3 {
+    color: #04a596;
+  }
+  &:hover {
+    box-shadow: 0 1.5rem 4rem #04a596;
+  }
+}
+.quality {
+  h3 {
+    color: #0c95af;
+  }
+  &:hover {
+    box-shadow: 0 1.5rem 4rem #0c95af;
+  }
+}
+.experience {
+  h3 {
+    color: #3f73ad;
+  }
+  &:hover {
+    box-shadow: 0 1.5rem 4rem #3f73ad;
+  }
+}
+.satisfaction {
+  h3 {
+    color: #5f5ca1;
+  }
+  &:hover {
+    box-shadow: 0 1.5rem 4rem #5f5ca1;
+  }
 }

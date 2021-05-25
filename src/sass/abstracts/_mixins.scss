@@ -14,7 +14,7 @@
     width: 100%;
     transform-origin: top;
     transform: rotateX($rotateAngle);
-    transition: all 0.3s 0.3s ease-out;
+    transition: all 0.3s 0.2s ease-out;
     z-index: -1;
     top: 100%;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);

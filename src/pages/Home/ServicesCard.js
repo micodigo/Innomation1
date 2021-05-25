@@ -9,7 +9,7 @@ import PanelBuilding from "../../img/PanelBuilding.png";
 import PLC from "../../img/PLC.png";
 import ThirdParty from "../../img/ThirdParty.png";
 import Training from "../../img/Training.png";
-export default function WhyUs() {
+export default function ServicesCard() {
   const [state, setstate] = useState({
     objects1: [{ id: 1 }, { id: 2 }],
     objects2: [
@@ -104,9 +104,11 @@ export default function WhyUs() {
   };
   return (
     <section className={classes.section}>
-      <div className={classes.row}>
-        <h4>Our Services</h4>
-        <h2 className={classes.heading}>Explore Our Market Leading Services</h2>
+      <div className={`${classes.row} ${classes.section_heading}`}>
+        <h4 className={classes.heading_tertiary}>Our Services</h4>
+        <h2 className={classes.heading_secondary}>
+          Explore Our Market Leading Services
+        </h2>
       </div>
       {state.objects1.map((element1, index) => (
         <div key={index} className={classes.row}>

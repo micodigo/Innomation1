@@ -1,0 +1,12 @@
+.section_heading {
+  text-align: center;
+}
+.heading {
+  &_secondary {
+    color: darken($color-primary-dark, 20%);
+    // text-transform: uppercase;
+  }
+  &_tertiary {
+    color: $color-primary-dark;
+  }
+}
