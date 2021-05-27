@@ -3,7 +3,7 @@
 @import "../sass/base/animations";
 .header {
   &_sub {
-    height: 14vh;
+    height: 10vh;
     background-color: $color-primary-light;
     position: relative;
     border-bottom: 0.7px solid $color-border;
@@ -56,7 +56,7 @@
   transform: translateY(-50%);
   left: 6%;
   &_img {
-    width: 22rem;
+    width: 13%;
   }
 }
 .p_icon {

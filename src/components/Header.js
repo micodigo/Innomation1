@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../img/logo.png";
+import logo from "../img/logo.jpg";
 import picon from "../img/phone-icon.png";
 import classes from "./Header.module.scss";
 import { useState } from "react";
@@ -103,7 +103,7 @@ export default function Header() {
           </a>
 
           <a
-            href="https://www.linkedin.com/"
+            href=" https://www.linkedin.com/company/innomation-tech-services"
             target="blank"
             className={classes.social_link}
           >

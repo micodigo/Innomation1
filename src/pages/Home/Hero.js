@@ -23,7 +23,7 @@ export default function Hero() {
     <div className={classes.hero}>
       <div
         className={classes.hero_slider}
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        style={{ transform: `translate3d(${-index * 100}%,0,0)` }}
       >
         {images.map((element, index) => (
           <div className={classes.slide} key={index}>

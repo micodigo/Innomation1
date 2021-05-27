@@ -3,10 +3,11 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Aboutus from "./pages/Aboutus";
+import Layout from "./components/Layout";
 
 export default function App() {
   return (
-    <>
+    <Layout>
       <Switch>
         <Route path="/" exact>
           <Home />
@@ -18,6 +19,6 @@ export default function App() {
           <Aboutus />
         </Route>
       </Switch>
-    </>
+    </Layout>
   );
 }

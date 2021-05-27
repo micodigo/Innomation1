@@ -2,7 +2,7 @@
   "name": "innomation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://micodigo.github.io/Innomationlive/",
+  "homepage": "https://micodigo.github.io/innomationlive/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",

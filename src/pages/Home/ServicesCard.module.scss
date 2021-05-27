@@ -15,7 +15,7 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
   transition: all 0.3s;
-  -webkit-filter: blur(0);
+  // -webkit-filter: blur(0);
   cursor: pointer;
   &:hover {
     @include icontoggle(0);
@@ -29,13 +29,14 @@
   &_active {
     transform: scale(1.2);
     z-index: 20;
-    border-radius: 3px 3px;
+    border-top-left-radius: 80%;
     transition: all 0.3s;
     @include servicecardtogle(0deg);
     @include icontoggle(0%);
   }
   &_inactive {
-    border-radius: 2rem 3px;
+    border-top-left-radius: 80%;
+    // border-radius: 2rem 3px;
     &:hover {
       transform: scale(1.1);
       z-index: 19;

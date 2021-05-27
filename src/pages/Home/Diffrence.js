@@ -13,8 +13,8 @@ function Diffrence() {
       </div>
 
       <div className={classes.row}>
-        <div className={`${classes.col_1_of_4} ${classes.otd}`}>
-          <div className={classes.card}>
+        <div className={`${classes.col_1_of_4} `}>
+          <div className={`${classes.card} ${classes.otd}`}>
             <div className={classes.icon}>
               <img src={Ontime} alt="" />
             </div>
@@ -29,8 +29,8 @@ function Diffrence() {
             </div>
           </div>
         </div>
-        <div className={`${classes.col_1_of_4} ${classes.quality}`}>
-          <div className={classes.card}>
+        <div className={`${classes.col_1_of_4} `}>
+          <div className={`${classes.card} ${classes.quality}`}>
             <div className={classes.icon}>
               <img src={Quality} alt="" />
             </div>
@@ -44,8 +44,8 @@ function Diffrence() {
             </div>
           </div>
         </div>
-        <div className={`${classes.col_1_of_4} ${classes.experience}`}>
-          <div className={classes.card}>
+        <div className={`${classes.col_1_of_4} `}>
+          <div className={`${classes.card} ${classes.experience}`}>
             <div className={classes.icon}>
               <img src={Experience} alt="" />
             </div>
@@ -60,8 +60,8 @@ function Diffrence() {
             </div>
           </div>
         </div>
-        <div className={`${classes.col_1_of_4} ${classes.satisfaction}`}>
-          <div className={classes.card}>
+        <div className={`${classes.col_1_of_4} `}>
+          <div className={`${classes.card} ${classes.satisfaction}`}>
             <div className={classes.icon}>
               <img src={Satisfaction} alt="" />
             </div>
