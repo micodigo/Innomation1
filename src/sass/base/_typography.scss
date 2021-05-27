@@ -4,7 +4,7 @@
 .heading {
   &_secondary {
     color: darken($color-primary-dark, 20%);
-    // text-transform: uppercase;
+    text-transform: uppercase;
   }
   &_tertiary {
     color: $color-primary-dark;

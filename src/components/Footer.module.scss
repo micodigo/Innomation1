@@ -5,7 +5,11 @@
 
 .footer {
   height: 50vh;
-  background-color: #3f73ad;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(rgb(0, 0, 0), 0.8),
+    rgba(#000, 0.6)
+  );
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   position: relative;
   padding: 15rem;
