@@ -79,6 +79,9 @@ export default function Ourpartners() {
           <li>
             <img src={Itc} alt="" />
           </li>
+          <li>
+            <img src={Mondelez} alt="" />
+          </li>
         </ul>
       </div>
     </section>

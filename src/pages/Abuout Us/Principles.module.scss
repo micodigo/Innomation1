@@ -1,0 +1,90 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+@import "../../sass/base/layout";
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;600;700&display=swap");
+.principles {
+  font-family: "Mukta";
+  height: 90vh;
+  position: relative;
+  background-image: url(../../img/Principles/MVV2.png);
+  background-size: 1450px 617px;
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-color: rgb(41, 0, 155);
+  // background-size: cover;
+  &_heading {
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: -8rem;
+    left: 3%;
+  }
+}
+
+.heading_sub {
+  font-size: 3rem;
+  &_mission {
+    h3 {
+      color: #0c95af;
+
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 6rem;
+    }
+    p {
+      text-align: justify;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+    position: absolute;
+    font-size: 3rem;
+
+    width: 50rem;
+    left: 65%;
+    top: 1%;
+  }
+  &_vision {
+    h3 {
+      color: #3f73ad;
+
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 6rem;
+    }
+    p {
+      text-align: justify;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+    position: absolute;
+    font-size: 3rem;
+
+    width: 35rem;
+    left: 2%;
+    top: 26%;
+  }
+  &_values {
+    h3 {
+      color: #5f5ca1;
+
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 6rem;
+    }
+    p {
+      text-align: justify;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+    position: absolute;
+    font-size: 3rem;
+
+    width: 50rem;
+    left: 62.5%;
+    top: 50%;
+  }
+}

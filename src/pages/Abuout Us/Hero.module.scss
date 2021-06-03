@@ -1,22 +1,55 @@
-@import "../../sass/abstracts/mixins";
 @import "../../sass/abstracts/variables";
-// @import "../../sass/base/typography";
+@import "../../sass/abstracts/mixins";
+@import "../../sass/base/typography";
 @import "../../sass/base/layout";
-@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
-.hero {
-  height: 78vh;
-  //   background: #000, url(../../img/Aboutus.jpg);
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(rgb(0, 0, 0), 0.8),
-      rgba(#000, 0.6)
-    ),
-    url("../../img/Aboutus.jpg");
-  background-size: cover;
-  background-position: top right;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+
+// .section_heading {
+//   text-align: left;
+// }
+.section {
+  padding: 0;
 }
-.pageheading {
-  letter-spacing: 1.3rem;
+.row {
+  max-width: 140rem !important;
+  //   background-color: #404040;
+  background-image: linear-gradient(
+    to right,
+    #404040 75%,
+    transparent 75%,
+    transparent 100%
+  );
+  .col_1_of_2 {
+    margin-top: 4px;
+  }
+}
+.content {
+  //   background-color: #404040;
+  padding: 6rem;
+  color: $color-primary-light;
+  &_heading {
+    margin: 2rem;
+  }
+  &_description {
+    line-height: 1.85;
+    letter-spacing: 1.2;
+    text-align: justify;
+  }
+}
+.visual {
+  //   position: relative;
+  //   background-image: linear-gradient(
+  //     to right,
+  //     #404040 50%,
+  //     transparent 50%,
+  //     transparent 100%
+  //   );
+  &_img {
+    // position: absolute;
+    // top:50%;
+    // left:
+    margin: 0 auto;
+    img {
+      width: 80%;
+    }
+  }
 }

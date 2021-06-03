@@ -1,0 +1,16 @@
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/base/layout";
+
+@include col_1_of_2;
+.visual {
+  margin: 0 auto;
+  img {
+    width: 40%;
+  }
+}
+.description {
+  padding: 5rem 0;
+  margin: 0 auto;
+  text-align: justify;
+}

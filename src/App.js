@@ -15,7 +15,7 @@ export default function App() {
         <Route path="/ContactUs" exact>
           <Contact />
         </Route>
-        <Route path="/AboutUs" exact>
+        <Route path="/AboutUs">
           <Aboutus />
         </Route>
       </Switch>

@@ -1,12 +1,17 @@
 import React from "react";
 import "./Aboutus.scss";
 import Hero from "./Abuout Us/Hero";
-import Intro from "./Abuout Us/Intro";
+import Principles from "./Abuout Us/Principles";
+// import Intro from "./Abuout Us/Intro";
+// import Partition from "./Abuout Us/Partition";
+
 export default function Aboutus() {
   return (
     <>
       <Hero />
-      <Intro />
+      <Principles />
+      {/* <Intro /> */}
+      {/* <Partition /> */}
     </>
   );
 }
